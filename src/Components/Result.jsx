@@ -7,13 +7,19 @@ export default function Result() {
         setExit(false);
         setStart(false);
     }
+    // const feel=()=>{
+    //     let obj={correctA,correctB,correctC,correctD}
+	//     let greatest=Object.values(obj).sort().pop()
+	//     let key = Object.keys(obj).find( k => obj[k] === greatest )
+    //     console.log(key)
+    // }
     return (
         <div className='w-full h-screen flex justify-center items-center'>
             <div className='w-[40%] border shadow-lg rounded-md overflow-hidden text-center'>
-                <h2 className='text-2xl p-3 my-2'>{correctA} are A</h2>
-                <h2 className='text-2xl p-3 my-2'>{correctB} are B</h2>
-                <h2 className='text-2xl p-3 my-2'>{correctC} are C</h2>
-                <h2 className='text-2xl p-3 my-2'>{correctD} are D</h2>
+                <h2 className='text-2xl p-3 my-2'>{correctA} are None of the time</h2>
+                <h2 className='text-2xl p-3 my-2'>{correctB} are Rarely</h2>
+                <h2 className='text-2xl p-3 my-2'>{correctC} are Often</h2>
+                <h2 className='text-2xl p-3 my-2'>{correctD} are All of the time</h2>
                 <button onClick={playAgain} className='border border-orange-500 p-3 text-2xl rounded'>Play agian</button>
             </div>
         </div>
